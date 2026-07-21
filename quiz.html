@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>法曹キャリア適性診断 | リーガルパレット関西</title>
+<meta name="description" content="15の質問から、あなたの思考の癖と最適な法曹キャリアの現実を導き出す診断です。リーガルパレット関西。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <img src="images/logo.png" alt="" width="32" height="32">
+      </span>
+      <span class="logo-text">リーガルパレット関西</span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-burger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="site-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="index.html#concept">コンセプト</a></li>
+        <li><a href="index.html#for-firms">法律事務所様へ</a></li>
+        <li><a href="index.html#diagnosis">法曹タイプ診断</a></li>
+        <li><a href="index.html#faq">よくある質問</a></li>
+        <li><a href="index.html#join" class="nav-cta">入会する</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= PAGE HEADER ================= -->
+  <section class="page-header">
+    <div class="page-header-inner">
+      <p class="eyebrow">TYPE DIAGNOSIS</p>
+      <h1>法曹キャリア適性診断</h1>
+      <p class="page-header-lead">15の質問から、あなたの思考の癖と最適なキャリアの現実を導き出します。</p>
+    </div>
+  </section>
+
+  <!-- ================= QUIZ ================= -->
+  <section class="section quiz-section">
+    <div class="quiz-wrap">
+
+      <!-- スタート画面 -->
+      <div id="start-screen" class="quiz-card">
+        <h2>あなたの「法曹タイプ」を発見しよう</h2>
+        <p class="quiz-start-lead">
+          直感に従って、7段階のスケールから最も当てはまるものを選んでください。<br>所要時間：約2分
+        </p>
+        <button class="btn btn-primary" onclick="startQuiz()">診断を始める</button>
+      </div>
+
+      <!-- クイズ画面 -->
+      <div id="quiz-screen" class="quiz-card quiz-screen">
+        <div class="quiz-progress-track">
+          <div class="quiz-progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="quiz-qnum" id="question-number">Question 1 / 15</div>
+        <div class="quiz-qtext" id="question-text">質問文がここに入ります</div>
+
+        <div class="quiz-scale">
+          <div class="quiz-scale-labels">
+            <span>そう思う</span>
+            <span>そう思わない</span>
+          </div>
+          <div class="quiz-scale-options">
+            <button class="quiz-scale-btn" onclick="answerQuestion(3)" aria-label="非常にそう思う"></button>
+            <button class="quiz-scale-btn" onclick="answerQuestion(2)" aria-label="そう思う"></button>
+            <button class="quiz-scale-btn" onclick="answerQuestion(1)" aria-label="ややそう思う"></button>
+            <button class="quiz-scale-btn" onclick="answerQuestion(0)" aria-label="どちらでもない"></button>
+            <button class="quiz-scale-btn" onclick="answerQuestion(-1)" aria-label="ややそう思わない"></button>
+            <button class="quiz-scale-btn" onclick="answerQuestion(-2)" aria-label="そう思わない"></button>
+            <button class="quiz-scale-btn" onclick="answerQuestion(-3)" aria-label="非常にそう思わない"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 結果画面 -->
+      <div id="result-screen" class="quiz-card quiz-result">
+        <div class="quiz-result-badge" id="result-badge">診断結果：タイプ⑤</div>
+        <h2 class="quiz-result-title" id="result-title">国際舞台のタフガイ</h2>
+        <div class="quiz-result-desc" id="result-desc">
+          <!-- 結果の詳細説明 -->
+        </div>
+        <div class="quiz-cta">
+          <p>このタイプの先輩・法律事務所のリアルな話を聞いてみませんか？</p>
+          <a href="index.html#join" class="btn btn-primary">先輩に話を聞きに行く（入会・問い合わせ）</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <div class="footer-brand">
+        <span class="logo-mark" aria-hidden="true">
+          <img src="images/logo.png" alt="" width="26" height="26">
+        </span>
+        <span>リーガルパレット関西</span>
+      </div>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="index.html#concept">コンセプト</a>
+        <a href="index.html#for-firms">法律事務所様へ</a>
+        <a href="index.html#faq">よくある質問</a>
+        <a href="index.html#join">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー・免責事項</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 リーガルパレット関西. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>
