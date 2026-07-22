@@ -22,6 +22,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://legalpalette.github.io/-/blog/what-is-summer-clerk.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legalpalette.github.io/-/blog/law-firm-job-hunting-schedule.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://legalpalette.github.io/-/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
