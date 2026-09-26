@@ -1053,6 +1053,40 @@ ul { list-style: none; margin: 0; padding: 0; }
   opacity: 0.8;
 }
 
+/* Visit reports */
+.visit-card-meta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.visit-card-meta-row .blog-card-category { margin-bottom: 0; }
+
+.visit-firm-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.visit-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.visit-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
 /* Article page */
 .blog-article-inner {
   max-width: 760px;
